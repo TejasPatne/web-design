@@ -1,0 +1,24 @@
+<%- include('partials/header'); %> 
+<link rel="stylesheet" href="about-contact.css">
+
+<div class="about container">
+    <h1>About</h1>
+    <div class="basic-intro">
+        <p>Hello there!</p>
+        <p>I am <%= data[0].name %> </p>
+        <p>Junior Officer of <%= data[0].team %> team at AiColegion club of AI&DS department, VESIT </p>
+    </div>
+    <div class="team-container">
+        <h3>Technical Team</h3>
+        <div class="team">
+        <% data.forEach((person)=>{ if(person.team=='Tech'){%> 
+             <div>
+                 <img src="<%= person.img%>" alt="profile-photo">
+                <h3><%= person.name%></h3>
+            </div>
+        <%}}) %> 
+        </div>
+    </div>
+</div>
+    
+<%- include('partials/footer'); %> 

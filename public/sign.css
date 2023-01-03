@@ -1,0 +1,43 @@
+form{
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    flex-direction: column;
+    padding: 64px;
+    margin: 32px auto;
+    width: 20%;
+    border-radius: 12px;
+    color: rgba(0, 0, 0, 0.75);
+    transition: all 4s;
+}
+input, label, button{
+    width: 100%;
+    font-size: 1.2rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+button{
+    margin: auto;
+    background-color: rgba(172, 255, 47, 0.5);
+    width: 50%;
+    height: fit-content;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    outline-offset: none;
+    border: 3px solid rgb(154, 254, 5);
+    border-radius: 5px;
+    transition: all 700ms;
+}
+
+button:hover{
+    background-color: rgb(154, 254, 5);
+    border-color: rgb(209, 255, 139);
+}
+
+@media all and (max-width: 600px){
+    form{
+        margin: 16px auto;
+        width: 60%;
+    }
+}
